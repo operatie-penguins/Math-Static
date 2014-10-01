@@ -1,14 +1,14 @@
 function x = ras(l,k)
-%произвольная матрица К
+%random  matrix К
 %K = rand(k);
 %L = chol(K);
-%произвальная m
+%randim m
 m = rand(1,k);
 K = gen_K(k);
 
 L = chol(K);
 L = L';
-%Y из формулы 1.12 по формуе 1.9
+%Y from formula 1.12 by 1.9
 YY = lab_1_1(100);
 for i = 1:l
 	Y(i) = 0;
@@ -19,7 +19,7 @@ for i = 1:l
 end
 
 
-%по формуле 1.15
+%formula 1.15
 for i = 1:l
    for j = 1:k
       x(i,j) = m(j) + L(j)*Y(i);
