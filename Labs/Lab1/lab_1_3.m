@@ -4,7 +4,7 @@ function x = ras(l,k)
 %L = chol(K);
 %randim m
 m = rand(1,k);
-K = gen_K(k);
+K = gen_K(k);% create matrix k x k
 
 L = chol(K);
 L = L';
