@@ -1,5 +1,5 @@
 function x = ras(l,k)
-%random  matrix Ê
+%random  matrix K
 %K = rand(k);
 %L = chol(K);
 %randim m
